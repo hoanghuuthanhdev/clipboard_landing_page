@@ -1,0 +1,219 @@
+/* ==========================================================================
+   Theme System - Dark/Light Mode
+   ========================================================================== */
+
+:root {
+  /* Light theme colors (default) */
+  --color-primary: hsl(171, 66%, 44%);
+  --color-primary-light: hsl(171, 66%, 54%);
+  --color-primary-dark: hsl(171, 66%, 34%);
+  
+  --color-secondary: hsl(233, 100%, 69%);
+  --color-secondary-light: hsl(233, 100%, 79%);
+  --color-secondary-dark: hsl(233, 100%, 59%);
+  
+  /* Light theme neutral colors */
+  --color-bg-primary: hsl(0, 0%, 100%);
+  --color-bg-secondary: hsl(201, 11%, 96%);
+  --color-bg-tertiary: hsl(201, 11%, 92%);
+  
+  --color-text-primary: hsl(210, 10%, 15%);
+  --color-text-secondary: hsl(210, 10%, 23%);
+  --color-text-tertiary: hsl(201, 11%, 55%);
+  
+  --color-border: hsl(201, 11%, 85%);
+  --color-border-light: hsl(201, 11%, 90%);
+  
+  /* Shadows for light theme */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  /* Dark theme neutral colors */
+  --color-bg-primary: hsl(210, 11%, 8%);
+  --color-bg-secondary: hsl(210, 11%, 12%);
+  --color-bg-tertiary: hsl(210, 11%, 16%);
+  
+  --color-text-primary: hsl(201, 11%, 96%);
+  --color-text-secondary: hsl(201, 11%, 85%);
+  --color-text-tertiary: hsl(201, 11%, 66%);
+  
+  --color-border: hsl(210, 11%, 20%);
+  --color-border-light: hsl(210, 11%, 16%);
+  
+  /* Adjust primary colors for dark theme */
+  --color-primary-light: hsl(171, 66%, 50%);
+  --color-secondary-light: hsl(233, 100%, 75%);
+  
+  /* Shadows for dark theme */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+}
+
+/* Theme transition */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Base theme styles */
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-secondary);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  background-color: var(--color-bg-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Theme toggle icons */
+.theme-toggle-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-text-primary);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle .sun-icon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.theme-toggle .moon-icon {
+  position: absolute;
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+[data-theme="dark"] .theme-toggle .sun-icon {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+[data-theme="dark"] .theme-toggle .moon-icon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* Update component styles for theming */
+.nav {
+  background-color: var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(10px);
+}
+
+.card {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-light);
+}
+
+.btn-outline {
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg-primary);
+}
+
+/* Hero section theming */
+.hero {
+  background-color: var(--color-bg-secondary);
+}
+
+/* Footer theming */
+.footer {
+  background-color: var(--color-bg-tertiary);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Form elements theming */
+input, textarea, select {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(171, 66, 44, 0.1);
+}
+
+/* Modal theming */
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+}
+
+/* Toast theming */
+.toast {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+}
+
+/* Loading spinner theming */
+.spinner {
+  border-color: var(--color-border);
+  border-top-color: var(--color-primary);
+}
+
+/* Error page theming */
+.error-page {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+/* Responsive theme toggle positioning */
+@media (min-width: 768px) {
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 767px) {
+  .theme-toggle {
+    position: relative;
+    margin-left: auto;
+  }
+}

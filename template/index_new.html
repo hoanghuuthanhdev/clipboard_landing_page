@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clipboard - The ultimate clipboard manager for iOS and Mac. Track, organize, and sync your clipboard across all devices.">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Clipboard - Ultimate Clipboard Manager | iOS & Mac</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="./images/logo.svg" alt="Clipboard Logo">
+        Clipboard
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      
+      <div class="nav-cta">
+        <a href="#pricing" class="btn btn-outline btn-sm">Try Free</a>
+        <a href="#download" class="btn btn-primary btn-sm">Download</a>
+      </div>
+      
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <img src="./images/logo.svg" alt="Clipboard Logo" class="hero-logo">
+      <h1 class="hero-title">A history of everything you copy</h1>
+      <p class="hero-subtitle">
+        Clipboard allows you to track and organize everything you copy. 
+        Instantly access your clipboard on all your devices with powerful search, 
+        smart categorization, and seamless synchronization.
+      </p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-secondary btn-lg">Download for iOS</a>
+        <a href="#" class="btn btn-primary btn-lg">Download for Mac</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Overview Section -->
+  <section class="section" id="features">
+    <div class="container text-center">
+      <h2 class="hero-title mb-6">Keep track of your snippets</h2>
+      <p class="hero-subtitle mb-12">
+        Clipboard instantly stores any item you copy in the cloud, meaning you can access 
+        your snippets immediately on all your devices. Our Mac and iOS apps will help you 
+        organize everything with powerful features designed for productivity.
+      </p>
+      
+      <div class="grid grid-2" style="align-items: center; gap: var(--space-16);">
+        <div>
+          <img src="./images/image-computer.png" alt="Computer with Clipboard app" style="width: 100%; height: auto;">
+        </div>
+        <div style="text-align: left;">
+          <div class="mb-8">
+            <h3 style="font-size: var(--font-size-2xl); font-weight: 600; color: var(--neutral-gray-700); margin-bottom: var(--space-3);">Quick Search</h3>
+            <p style="color: var(--neutral-gray-500);">Easily search your snippets by content, category, web address, application, and more with our powerful AI-powered search engine.</p>
+          </div>
+          <div class="mb-8">
+            <h3 style="font-size: var(--font-size-2xl); font-weight: 600; color: var(--neutral-gray-700); margin-bottom: var(--space-3);">iCloud Sync</h3>
+            <p style="color: var(--neutral-gray-500);">Instantly saves and syncs snippets across all your devices. Work seamlessly between your iPhone, iPad, and Mac.</p>
+          </div>
+          <div class="mb-8">
+            <h3 style="font-size: var(--font-size-2xl); font-weight: 600; color: var(--neutral-gray-700); margin-bottom: var(--space-3);">Complete History</h3>
+            <p style="color: var(--neutral-gray-500);">Retrieve any snippets from the first moment you started using the app. Never lose important information again.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access Anywhere Section -->
+  <section class="section" style="background-color: var(--gray-50);">
+    <div class="container text-center">
+      <h2 class="hero-title mb-6">Access Clipboard anywhere</h2>
+      <p class="hero-subtitle mb-12">
+        Whether you're on the go, or at your computer, you can access all your Clipboard 
+        snippets in a few simple clicks. Our cloud infrastructure ensures your data is 
+        always available when you need it.
+      </p>
+      <img src="./images/image-devices.png" alt="Devices showing Clipboard app" style="width: 100%; max-width: 800px; height: auto; margin: 0 auto;">
+    </div>
+  </section>
+
+  <!-- Advanced Features Section -->
+  <section class="section">
+    <div class="container text-center">
+      <h2 class="hero-title mb-6">Supercharge your workflow</h2>
+      <p class="hero-subtitle mb-12">
+        We've got the tools to boost your productivity with advanced features 
+        that adapt to your workflow and keep you organized.
+      </p>
+      
+      <div class="grid grid-3">
+        <div style="text-align: center; padding: var(--space-6);">
+          <img src="./images/icon-blacklist.svg" alt="Blacklist icon" style="width: 64px; height: 64px; margin: 0 auto var(--space-4);">
+          <h3 style="font-size: var(--font-size-xl); font-weight: 600; color: var(--neutral-gray-700); margin-bottom: var(--space-3);">Create blacklists</h3>
+          <p style="color: var(--neutral-gray-500);">Ensure sensitive information never makes its way to your clipboard by excluding certain sources and applications.</p>
+        </div>
+        <div style="text-align: center; padding: var(--space-6);">
+          <img src="./images/icon-text.svg" alt="Text formatting icon" style="width: 64px; height: 64px; margin: 0 auto var(--space-4);">
+          <h3 style="font-size: var(--font-size-xl); font-weight: 600; color: var(--neutral-gray-700); margin-bottom: var(--space-3);">Plain text snippets</h3>
+          <p style="color: var(--neutral-gray-500);">Remove unwanted formatting from copied text for a consistent look across all your applications and workflows.</p>
+        </div>
+        <div style="text-align: center; padding: var(--space-6);">
+          <img src="./images/icon-preview.svg" alt="Preview icon" style="width: 64px; height: 64px; margin: 0 auto var(--space-4);">
+          <h3 style="font-size: var(--font-size-xl); font-weight: 600; color: var(--neutral-gray-700); margin-bottom: var(--space-3);">Sneak preview</h3>
+          <p style="color: var(--neutral-gray-500);">Quick preview of all snippets on your Clipboard for easy access without interrupting your current workflow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section" id="pricing" style="background-color: var(--gray-50);">
+    <div class="container text-center">
+      <h2 class="hero-title mb-6">Choose your plan</h2>
+      <p class="hero-subtitle mb-12">
+        Start with our free plan and upgrade as your needs grow. 
+        All plans include our core features with increasing storage and advanced capabilities.
+      </p>
+      
+      <div class="grid grid-3">
+        <!-- Free Plan -->
+        <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow); border: 2px solid transparent; transition: var(--transition-normal);">
+          <h3 style="font-size: var(--font-size-2xl); font-weight: 700; color: var(--neutral-gray-700); margin-bottom: var(--space-2);">Free</h3>
+          <div style="margin-bottom: var(--space-6);">
+            <span style="font-size: var(--font-size-4xl); font-weight: 700; color: var(--neutral-gray-700);">$0</span>
+            <span style="color: var(--neutral-gray-500);">/month</span>
+          </div>
+          <ul style="text-align: left; margin-bottom: var(--space-8); list-style: none;">
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Up to 100 snippets</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Basic search</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ 2 devices sync</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ 7 days history</li>
+          </ul>
+          <a href="#" class="btn btn-outline" style="width: 100%;">Get Started</a>
+        </div>
+        
+        <!-- Pro Plan -->
+        <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); border: 2px solid var(--primary-green); position: relative; transform: scale(1.05);">
+          <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--primary-green); color: var(--white); padding: var(--space-1) var(--space-4); border-radius: var(--radius-full); font-size: var(--font-size-sm); font-weight: 600;">Most Popular</div>
+          <h3 style="font-size: var(--font-size-2xl); font-weight: 700; color: var(--neutral-gray-700); margin-bottom: var(--space-2);">Pro</h3>
+          <div style="margin-bottom: var(--space-6);">
+            <span style="font-size: var(--font-size-4xl); font-weight: 700; color: var(--neutral-gray-700);">$9</span>
+            <span style="color: var(--neutral-gray-500);">/month</span>
+          </div>
+          <ul style="text-align: left; margin-bottom: var(--space-8); list-style: none;">
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Unlimited snippets</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ AI-powered search</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Unlimited devices</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Complete history</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-primary" style="width: 100%;">Start Free Trial</a>
+        </div>
+        
+        <!-- Team Plan -->
+        <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow); border: 2px solid transparent;">
+          <h3 style="font-size: var(--font-size-2xl); font-weight: 700; color: var(--neutral-gray-700); margin-bottom: var(--space-2);">Team</h3>
+          <div style="margin-bottom: var(--space-6);">
+            <span style="font-size: var(--font-size-4xl); font-weight: 700; color: var(--neutral-gray-700);">$29</span>
+            <span style="color: var(--neutral-gray-500);">/month</span>
+          </div>
+          <ul style="text-align: left; margin-bottom: var(--space-8); list-style: none;">
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Everything in Pro</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Team collaboration</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Shared snippets</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Admin controls</li>
+            <li style="padding: var(--space-2) 0; color: var(--neutral-gray-500);">✓ Advanced analytics</li>
+          </ul>
+          <a href="#" class="btn btn-secondary" style="width: 100%;">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials">
+    <div class="container text-center">
+      <h2 class="hero-title mb-6">Trusted by professionals worldwide</h2>
+      <p class="hero-subtitle mb-12">
+        Join thousands of users who have transformed their workflow with Clipboard. 
+        See what our customers have to say about their experience.
+      </p>
+      
+      <div class="grid grid-3 mb-16">
+        <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow); text-align: center;">
+          <div style="margin-bottom: var(--space-4);">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--gray-300); margin: 0 auto var(--space-4);"></div>
+            <div style="color: var(--warning); font-size: var(--font-size-lg); margin-bottom: var(--space-2);">★★★★★</div>
+          </div>
+          <p style="color: var(--neutral-gray-500); margin-bottom: var(--space-4); font-style: italic;">"Clipboard has completely changed how I work. The search functionality is incredible and saves me hours every week."</p>
+          <div>
+            <div style="font-weight: 600; color: var(--neutral-gray-700);">Sarah Chen</div>
+            <div style="color: var(--neutral-gray-500); font-size: var(--font-size-sm);">Product Designer at Apple</div>
+          </div>
+        </div>
+        
+        <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow); text-align: center;">
+          <div style="margin-bottom: var(--space-4);">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--gray-300); margin: 0 auto var(--space-4);"></div>
+            <div style="color: var(--warning); font-size: var(--font-size-lg); margin-bottom: var(--space-2);">★★★★★</div>
+          </div>
+          <p style="color: var(--neutral-gray-500); margin-bottom: var(--space-4); font-style: italic;">"The team features are fantastic. We can share snippets seamlessly and collaborate more effectively than ever."</p>
+          <div>
+            <div style="font-weight: 600; color: var(--neutral-gray-700);">Michael Rodriguez</div>
+            <div style="color: var(--neutral-gray-500); font-size: var(--font-size-sm);">Lead Developer at Shopify</div>
+          </div>
+        </div>
+        
+        <div style="background: var(--white); padding: var(--space-8); border-radius: var(--radius-xl); box-shadow: var(--shadow); text-align: center;">
+          <div style="margin-bottom: var(--space-4);">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--gray-300); margin: 0 auto var(--space-4);"></div>
+            <div style="color: var(--warning); font-size: var(--font-size-lg); margin-bottom: var(--space-2);">★★★★★</div>
+          </div>
+          <p style="color: var(--neutral-gray-500); margin-bottom: var(--space-4); font-style: italic;">"Simple, powerful, and reliable. Clipboard works exactly as advertised and never lets me down."</p>
+          <div>
+            <div style="font-weight: 600; color: var(--neutral-gray-700);">Emma Thompson</div>
+            <div style="color: var(--neutral-gray-500); font-size: var(--font-size-sm);">Content Creator</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Company Logos -->
+      <div style="margin-bottom: var(--space-8);">
+        <p style="color: var(--neutral-gray-500); margin-bottom: var(--space-8); font-size: var(--font-size-sm);">Trusted by teams at</p>
+        <div style="display: flex; justify-content: center; align-items: center; gap: var(--space-12); flex-wrap: wrap; opacity: 0.6;">
+          <img src="./images/logo-google.png" alt="Google" style="height: 40px;">
+          <img src="./images/logo-ibm.png" alt="IBM" style="height: 40px;">
+          <img src="./images/logo-microsoft.png" alt="Microsoft" style="height: 40px;">
+          <img src="./images/logo-hp.png" alt="HP" style="height: 40px;">
+          <img src="./images/logo-vector-graphics.png" alt="Vector Graphics" style="height: 40px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="support" style="background-color: var(--gray-50);">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="hero-title mb-6">Frequently Asked Questions</h2>
+        <p class="hero-subtitle">
+          Get answers to common questions about Clipboard and how it can improve your workflow.
+        </p>
+      </div>
+      
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item" style="background: var(--white); margin-bottom: var(--space-4); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow);">
+          <button class="faq-question" style="width: 100%; padding: var(--space-6); text-align: left; background: none; border: none; font-size: var(--font-size-lg); font-weight: 600; color: var(--neutral-gray-700); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+            Is my data secure with Clipboard?
+            <span style="font-size: var(--font-size-xl);">+</span>
+          </button>
+          <div class="faq-answer" style="padding: 0 var(--space-6) var(--space-6); color: var(--neutral-gray-500); display: none;">
+            Yes, absolutely. We use end-to-end encryption to protect your data, and all snippets are stored securely in the cloud with enterprise-grade security measures.
+          </div>
+        </div>
+        
+        <div class="faq-item" style="background: var(--white); margin-bottom: var(--space-4); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow);">
+          <button class="faq-question" style="width: 100%; padding: var(--space-6); text-align: left; background: none; border: none; font-size: var(--font-size-lg); font-weight: 600; color: var(--neutral-gray-700); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+            Can I use Clipboard offline?
+            <span style="font-size: var(--font-size-xl);">+</span>
+          </button>
+          <div class="faq-answer" style="padding: 0 var(--space-6) var(--space-6); color: var(--neutral-gray-500); display: none;">
+            Yes, Clipboard works offline and will sync your changes when you reconnect to the internet. Your most recent snippets are always available locally.
+          </div>
+        </div>
+        
+        <div class="faq-item" style="background: var(--white); margin-bottom: var(--space-4); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow);">
+          <button class="faq-question" style="width: 100%; padding: var(--space-6); text-align: left; background: none; border: none; font-size: var(--font-size-lg); font-weight: 600; color: var(--neutral-gray-700); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+            How many devices can I sync?
+            <span style="font-size: var(--font-size-xl);">+</span>
+          </button>
+          <div class="faq-answer" style="padding: 0 var(--space-6) var(--space-6); color: var(--neutral-gray-500); display: none;">
+            The free plan supports up to 2 devices. Pro and Team plans support unlimited devices with real-time synchronization.
+          </div>
+        </div>
+        
+        <div class="faq-item" style="background: var(--white); margin-bottom: var(--space-4); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow);">
+          <button class="faq-question" style="width: 100%; padding: var(--space-6); text-align: left; background: none; border: none; font-size: var(--font-size-lg); font-weight: 600; color: var(--neutral-gray-700); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+            Can I cancel my subscription anytime?
+            <span style="font-size: var(--font-size-xl);">+</span>
+          </button>
+          <div class="faq-answer" style="padding: 0 var(--space-6) var(--space-6); color: var(--neutral-gray-500); display: none;">
+            Yes, you can cancel your subscription at any time. You'll continue to have access to premium features until the end of your billing period.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA Section -->
+  <section class="section" id="download">
+    <div class="container text-center">
+      <h2 class="hero-title mb-6">Clipboard for iOS and Mac OS</h2>
+      <p class="hero-subtitle mb-12">
+        Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+        and you're ready to start adding to your clipboard.
+      </p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-secondary btn-lg">Download for iOS</a>
+        <a href="#" class="btn btn-primary btn-lg">Download for Mac</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: var(--gray-800); color: var(--white); padding: var(--space-20) 0 var(--space-8);">
+    <div class="container">
+      <div class="grid grid-4 mb-12">
+        <div>
+          <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-6);">
+            <img src="./images/logo.svg" alt="Clipboard Logo" style="width: 32px; height: 32px; filter: brightness(0) invert(1);">
+            <span style="font-weight: 700; font-size: var(--font-size-xl);">Clipboard</span>
+          </div>
+          <p style="color: var(--gray-400); margin-bottom: var(--space-6);">
+            The ultimate clipboard manager that helps you stay organized and productive across all your devices.
+          </p>
+          <div style="display: flex; gap: var(--space-3);">
+            <a href="#" style="color: var(--gray-400); transition: var(--transition-fast);">
+              <img src="./images/icon-facebook.svg" alt="Facebook" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+            </a>
+            <a href="#" style="color: var(--gray-400); transition: var(--transition-fast);">
+              <img src="./images/icon-twitter.svg" alt="Twitter" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+            </a>
+            <a href="#" style="color: var(--gray-400); transition: var(--transition-fast);">
+              <img src="./images/icon-instagram.svg" alt="Instagram" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 style="font-weight: 600; margin-bottom: var(--space-4);">Product</h4>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: var(--space-2);"><a href="#features" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Features</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#pricing" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Pricing</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#download" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Download</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Release Notes</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="font-weight: 600; margin-bottom: var(--space-4);">Support</h4>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: var(--space-2);"><a href="#support" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">FAQs</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Contact Us</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Privacy Policy</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Install Guide</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="font-weight: 600; margin-bottom: var(--space-4);">Company</h4>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: var(--space-2);"><a href="#about" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">About</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Careers</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Press Kit</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--gray-400); text-decoration: none; transition: var(--transition-fast);">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div style="border-top: 1px solid var(--gray-700); padding-top: var(--space-8); text-align: center;">
+        <p style="color: var(--gray-400); font-size: var(--font-size-sm);">
+          © 2025 Clipboard. All rights reserved. | 
+          <a href="#" style="color: var(--gray-400); text-decoration: none;">Terms of Service</a> | 
+          <a href="#" style="color: var(--gray-400); text-decoration: none;">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="./script.js"></script> -->
+</body>
+</html>
