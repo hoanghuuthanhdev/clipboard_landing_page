@@ -1,0 +1,196 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+:root {
+  /* Brand Colors */
+  --color-primary-500: hsl(171, 66%, 44%);
+  --color-primary-400: hsl(171, 66%, 54%);
+  --color-primary-600: hsl(171, 66%, 34%);
+
+  --color-secondary-500: hsl(233, 100%, 69%);
+  --color-secondary-400: hsl(233, 100%, 79%);
+  --color-secondary-600: hsl(233, 100%, 59%);
+
+  /* Semantic Colors */
+  --color-success-500: hsl(142, 71%, 45%);
+  --color-success-100: hsl(142, 71%, 95%);
+  --color-danger-500: hsl(0, 65%, 51%);
+  --color-danger-100: hsl(0, 65%, 95%);
+  --color-warning-500: hsl(45, 100%, 51%);
+  --color-warning-100: hsl(45, 100%, 95%);
+  --color-info-500: hsl(217, 91%, 60%);
+  --color-info-100: hsl(217, 91%, 95%);
+
+  /* Light Theme */
+  --color-bg-primary: hsl(0, 0%, 100%);
+  --color-bg-secondary: hsl(201, 11%, 96%);
+  --color-bg-tertiary: hsl(201, 11%, 92%);
+  --color-border: hsl(201, 11%, 85%);
+  --color-text-primary: hsl(210, 10%, 15%);
+  --color-text-secondary: hsl(210, 10%, 23%);
+  --color-text-muted: hsl(201, 11%, 55%);
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --color-bg-primary: hsl(210, 10%, 8%);
+  --color-bg-secondary: hsl(210, 10%, 12%);
+  --color-bg-tertiary: hsl(210, 10%, 16%);
+  --color-border: hsl(210, 10%, 25%);
+  --color-text-primary: hsl(0, 0%, 100%);
+  --color-text-secondary: hsl(201, 11%, 85%);
+  --color-text-muted: hsl(201, 11%, 66%);
+}
+
+/* Typography */
+:root {
+  --font-family-primary: "Bai Jamjuree", sans-serif;
+  --font-family-secondary: system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* Z-index */
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-modal: 40;
+  --z-popover: 50;
+  --z-tooltip: 60;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--gray-600);
+  background-color: var(--white);
+  overflow-x: hidden;
+  transition: background-color var(--transition-normal),
+    color var(--transition-normal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--gray-600);
+  margin-bottom: var(--space-4);
+}
+
+p {
+  margin-bottom: var(--space-4);
+  line-height: var(--line-height-relaxed);
+}
+
+a {
+  color: var(--color-primary-500);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  display: inline-block;
+}
+a:hover,
+a:focus {
+  color: var(--color-primary-600);
+}
+
+a:focus {
+  transform: scale(1.1);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clipboard Landing Page</title>
+
+    <!-- Thêm các thẻ meta -->
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header_logo">
+          <img src="/assets/icons/logo.svg" alt="Clipboard logo" />
+          <a href="/" class="header_brand">Clipboard</a>
+        </div>
+        <nav class="header_nav" role="navigation" aria-label="Primary">
+          <ul class="nav_list">
+            <li class="nav__item">
+              <a class="nav__link" href="#feature">Features</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#workflow">Workflow</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_theme">
+          <button class="btn btn-theme" id="theme-toggle">
+            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+              <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+              <path d="m12 1-1 3h2l-1-3zM12 20l-1 3h2l-1-3zM4.22 4.22l1.42 1.42L4.22 4.22zM18.36 18.36l1.42 1.42-1.42-1.42zM1 12l3-1v2l-3-1zM20 12l3-1v2l-3-1zM4.22 19.78l1.42-1.42-1.42 1.42zM18.36 5.64l1.42-1.42-1.42 1.42z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <!-- Main section -->
+      <main>
+        <!-- section download -->
+        <section id="download" class="section section-download">
+          <div class="download_image">
+            <img src="/assets/icons/logo.svg" alt="Clipboard logo large" />
+          </div>
+          <h1 class="download_title">A history of everything you copy</h1>
+          <p class="download_description">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices with powerful
+            search, smart categorization, and seamless synchronization.
+          </p>
+          <div class="download_actions">
+            <a href="#" class="btn btn-primary">Download for Windows</a>
+            <a href="#" class="btn btn-secondary">Download for Mac</a>
+          </div>
+        </section>
+        <!-- section feature -->
+        <section id="feature" class="section section-feature">
+          <h2 class="feature_title">Access Clipboard anywhere</h2>
+          <p class="feature_description">
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. Our
+            Mac and iOS apps will help you organize everything with powerful
+            features designed for productivity.
+          </p>
+          <div class="feature_main">
+            <div class="feature_image">
+              <img src="/assets/images/image-computer.png" alt="Computer" />
+            </div>
+            <div class="feature_list">
+              <div class="feature_item">
+                <h3 class="feature_subtitle">Quick Search</h3>
+                <p class="feature_content">
+                  Easily search your snippets by content, category, web address,
+                  application, and more with our powerful AI-powered search
+                  engine.
+                </p>
+              </div>
+              <div class="feature_item">
+                <h3 class="feature_subtitle">iCloud Sync</h3>
+                <p class="feature_content">
+                  Instantly saves and syncs snippets across all your devices.
+                  Work seamlessly between your iPhone, iPad, and Mac.
+                </p>
+              </div>
+              <div class="feature_item">
+                <h3 class="feature_subtitle">Complete History</h3>
+                <p class="feature_content">
+                  Retrieve any snippets from the first moment you started using
+                  the app. Never lose important information again.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section access -->
+        <section id="access" class="section section-access">
+          <h2 class="access_title">Access Clipboard anywhere</h2>
+          <p class="access_description">
+            Whether you're on the go, or at your computer, you can access all
+            your Clipboard snippets in a few simple clicks. Our cloud
+            infrastructure ensures your data is always available when you need
+            it.
+          </p>
+          <div class="access_image">
+            <img src="/assets/images/image-devices.png" alt="Devices" />
+          </div>
+        </section>
+        <!-- section workflow -->
+        <section id="workflow" class="section section-workflow">
+          <h2 class="workflow_title">Supercharge your workflow</h2>
+          <p class="workflow_description">
+            We've got the tools to boost your productivity with advanced
+            features that adapt to your workflow and keep you organized.
+          </p>
+          <div class="workflow_list">
+            <div class="workflow_item">
+              <img
+                src="/assets/icons/icon-blacklist.svg"
+                alt="Black list icon"
+              />
+              <h4 class="workflow_subtitle">Create blacklists</h4>
+              <p class="workflow_content">
+                Ensure sensitive information never makes its way to your
+                clipboard by excluding certain sources and applications
+              </p>
+            </div>
+            <div class="workflow_item">
+              <img src="/assets/icons/icon-text.svg" alt="Icon text" />
+              <h4 class="workflow_subtitle">Plain text snippets</h4>
+              <p class="workflow_content">
+                Remove unwanted formatting from copied text for a consistent
+                look across all your applications and workflows.
+              </p>
+            </div>
+            <div class="workflow_item">
+              <img src="/assets/icons/icon-preview.svg" alt="Icon preview" />
+              <h4 class="workflow_subtitle">Sneak preview</h4>
+              <p class="workflow_content">
+                Quick preview of all snippets on your Clipboard for easy access
+                without interrupting your current workflow.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- section sponsor -->
+        <section id="sponsor" class="section section-sponsor">
+          <h2 class="sponsor_title">Trusted by professionals worldwide</h2>
+          <p class="sponsor_description">
+            Join thousands of users who have transformed their workflow with
+            Clipboard. See what our customers have to say about their
+            experience.
+          </p>
+
+          <div class="sponsor_section-professional">
+            <div class="sponsor-professional-famous"></div>
+            <div class="sponsor-professional-famous"></div>
+            <div class="sponsor-professional-famous"></div>
+          </div>
+          <div class="sponsor_logo">
+            <img src="/assets/images/logo-hp.png" alt="" />
+            <img src="/assets/images/logo-hp.png" alt="" />
+            <img src="/assets/images/logo-hp.png" alt="" />
+            <img src="/assets/images/logo-hp.png" alt="" />
+            <img src="/assets/images/logo-hp.png" alt="" />
+          </div>
+        </section>
+        <!-- section overview -->
+        <section id="faq" class="section section-faq">
+          <h2 class="faq_title">Frequently Asked Questions</h2>
+          <p class="faq_description">
+            Get answers to common questions about Clipboard and how it can
+            improve your workflow.
+          </p>
+          <div class="faq_list">
+            <div class="faq_item"></div>
+            <div class="faq_item"></div>
+            <div class="faq_item"></div>
+            <div class="faq_item"></div>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="footer"></footer>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="./src/js/theme-manager.js"></script>
+  </body>
+</html>

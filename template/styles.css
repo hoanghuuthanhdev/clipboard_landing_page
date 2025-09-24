@@ -4,7 +4,7 @@
    ========================================================================== */
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap'); */
 
 /* ==========================================================================
    CSS Custom Properties (Variables)
@@ -130,6 +130,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
 }
 
 * {
@@ -183,6 +184,7 @@ a:focus {
 a:focus {
   outline: 2px solid var(--primary-500);
   outline-offset: 2px;
+  
 }
 
 /* Lists */
@@ -287,9 +289,9 @@ body {
     position: relative;
 }
 
-.nav-menu a:hover {
+/* .nav-menu a:hover {
     color: var(--primary-500);
-}
+} */
 
 .nav-menu a::after {
     content: '';
@@ -319,6 +321,81 @@ body {
     font-size: var(--font-size-2xl);
     cursor: pointer;
     color: var(--neutral-gray-700);
+}
+
+/* Theme Toggle Styles */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-toggle:hover {
+    background: var(--gray-200);
+    border-color: var(--gray-300);
+    transform: scale(1.05);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+.theme-toggle-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: var(--gray-600);
+    transition: all var(--transition-fast);
+    position: absolute;
+}
+
+.theme-toggle-icon.sun-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.theme-toggle-icon.moon-icon {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.8);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: var(--gray-700);
+    border-color: var(--gray-600);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background: var(--gray-600);
+    border-color: var(--gray-500);
+}
+
+[data-theme="dark"] .theme-toggle-icon {
+    fill: var(--gray-300);
+}
+
+[data-theme="dark"] .theme-toggle-icon.sun-icon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.8);
+}
+
+[data-theme="dark"] .theme-toggle-icon.moon-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
 }
 
 /* Button Styles */
@@ -399,7 +476,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('./images/bg-header-desktop.png') no-repeat center top;
+    background: url('./assets/bg-header-desktop.png') no-repeat center top;
     background-size: cover;
     opacity: 0.1;
     z-index: -1;

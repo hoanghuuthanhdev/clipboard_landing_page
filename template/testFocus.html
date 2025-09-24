@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Focus vs Focus-Visible Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+
+    a, button {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+      text-decoration: none;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* Normal :focus — always shows when focused (mouse or keyboard) */
+    .focus-only:focus {
+      outline: 2px solid red;
+      outline-offset: 3px;
+    }
+
+    /* Focus-visible — shows only when focus comes from keyboard (Tab), 
+       not mouse click */
+    .focus-visible:focus-visible {
+      outline: 2px solid blue;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Focus vs Focus-Visible</h1>
+
+  <a href="#" class="focus-only">Link with :focus (red)</a>
+  <a href="#" class="focus-visible">Link with :focus-visible (blue)</a>
+
+  <button class="focus-only">Button with :focus (red)</button>
+  <button class="focus-visible">Button with :focus-visible (blue)</button>
+</body>
+</html>
