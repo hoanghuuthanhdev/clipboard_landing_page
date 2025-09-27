@@ -1,13 +1,8 @@
-# � Clipboard Landing Page
+# 📋 Clipboard Landing Page
 
-A modern, responsive landing page for a clipboard management tool built with HTML5, CSS3, and JavaScript to practice real-world front-end development workflows.
+A modern, responsive landing page for a clipboard management tool built with HTML5 and CSS3. This project is based on a Frontend Mentor challenge and focuses on practicing responsive web design and modern CSS techniques.
 
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://hoanghuuthanhdev.github.io/clipboard_landing_page)
-[![GitHub license](https://img.shields.io/github/license/hoanghuuthanhdev/clipboard_landing_page.svg)](https://github.com/hoanghuuthanhdev/clipboard_landing_page/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/hoanghuuthanhdev/clipboard_landing_page.svg)](https://github.com/hoanghuuthanhdev/clipboard_landing_page/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/hoanghuuthanhdev/clipboard_landing_page.svg)](https://github.com/hoanghuuthanhdev/clipboard_landing_page/network)
-
-![Clipboard Landing Page Preview](./preview.jpg)
+![Clipboard Landing Page Preview](./design/desktop-preview.jpg)
 
 ## 📖 Table of Contents
 
@@ -19,92 +14,86 @@ A modern, responsive landing page for a clipboard management tool built with HTM
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running Locally](#running-locally)
-- [Testing](#-testing)
-- [Deployment](#️-deployment)
+- [Design](#-design)
+- [What I Learned](#-what-i-learned)
+- [Continued Development](#-continued-development)
 - [Contributing](#-contributing)
 - [License](#-license)
 
-## � About
+## 🎯 About
 
-This project is a responsive landing page built to practice real-world front-end development workflows. It showcases a modern clipboard management tool with interactive features, pricing tiers, and customer testimonials. The project demonstrates proficiency in HTML5, CSS3, and JavaScript while following industry best practices for responsive web design and user experience.
+This project is a responsive landing page built as part of a Frontend Mentor challenge. It showcases a clipboard management tool with a clean, modern design that adapts seamlessly across different screen sizes. The project demonstrates proficiency in HTML5 and CSS3 while following best practices for responsive web design.
 
-**What it solves:**
-- Provides a professional template for SaaS landing pages
-- Demonstrates modern web development techniques
-- Shows responsive design implementation across devices
-- Implements interactive UI components and animations
+**Key Focus Areas:**
+- Responsive design implementation
+- Modern CSS techniques (Flexbox, Grid)
+- Cross-browser compatibility
+- Clean, semantic HTML structure
+- Mobile-first approach
 
 ## 🛠 Tech Stack
 
-**Frontend:** HTML5, CSS3, JavaScript (ES6+)
-**Styling:** Custom CSS with Flexbox & Grid
-**Icons:** SVG icons and custom graphics
-**Tools:** Git, VS Code, Browser DevTools
-**Deployment:** GitHub Pages
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with Flexbox and Grid
+- **Google Fonts** - Bai Jamjuree font family
+- **SVG Icons** - Scalable vector graphics
 
-## � Project Structure
+## 📁 Project Structure
 
 ```
-clipboard-landing-page/
-├── design/                # Design mockups and references
+clipboard-landing-page-master/
+├── design/                # Design references from Frontend Mentor
 │   ├── desktop-design.jpg
+│   ├── desktop-preview.jpg
 │   ├── mobile-design.jpg
 │   └── active-states.jpg
-├── images/                # Static assets and icons
+├── images/               # Static assets and icons
 │   ├── logo.svg
 │   ├── bg-header-desktop.png
 │   ├── bg-header-mobile.png
-│   ├── icon-*.svg         # Feature icons
-│   ├── image-*.png        # Product images
-│   └── logo-*.png         # Company logos
-├── index.html             # Main HTML file
-├── index_new.html         # Enhanced version with modern features
-├── styles.css             # Main stylesheet
-├── script.js              # JavaScript functionality
-├── preview.jpg            # Project preview image
-├── style-guide.md         # Design system documentation
-└── README.md              # Project documentation
+│   ├── icon-*.svg        # Feature icons
+│   ├── image-*.png       # Product screenshots
+│   └── logo-*.png        # Company logos
+├── index.html            # Main HTML file
+├── styles.css            # Main stylesheet
+├── style-guide.md        # Design system and color palette
+└── README.md             # Project documentation
 ```
 
 ## ✨ Features
 
-✅ **Responsive layout** - Works seamlessly on desktop, tablet, and mobile devices
+✅ **Fully Responsive Design** - Optimized for mobile, tablet, and desktop
 
-✅ **Cross-browser compatibility** - Tested on Chrome, Firefox, Safari, and Edge
+✅ **Modern CSS Layout** - Uses Flexbox and CSS Grid for layout
 
-✅ **Interactive navigation** - Responsive navbar with mobile hamburger menu
+✅ **Cross-browser Compatible** - Works on all modern browsers
 
-✅ **Modern UI components** - Clean design with smooth animations and transitions
+✅ **Semantic HTML** - Clean, accessible markup structure
 
-✅ **Pricing tiers** - Multiple subscription plans (Free, Pro, Team)
+✅ **Mobile-first Approach** - Designed for mobile and enhanced for larger screens
 
-✅ **Customer testimonials** - Social proof with user reviews and company logos
+✅ **Interactive Elements** - Hover effects and smooth transitions
 
-✅ **FAQ section** - Interactive expandable questions and answers
+✅ **Performance Optimized** - Efficient CSS and optimized images
 
-✅ **Performance optimized** - Fast loading times and efficient code
+✅ **Typography** - Beautiful typography using Google Fonts
 
-✅ **Accessibility compliant** - WCAG guidelines with semantic HTML
-
-✅ **SEO friendly** - Proper meta tags and structured content
-
-## � Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- A modern web browser (Chrome >= 90, Firefox >= 88, Safari >= 14)
-- Git for version control
+- A modern web browser (Chrome, Firefox, Safari, Edge)
 - Code editor (VS Code recommended)
-- Basic knowledge of HTML, CSS, and JavaScript
+- Basic understanding of HTML and CSS
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/hoanghuuthanhdev/clipboard_landing_page.git
+git clone https://github.com/yourusername/clipboard-landing-page-master.git
 
 # Navigate to project directory
-cd clipboard_landing_page
+cd clipboard-landing-page-master
 
 # Open with your preferred code editor
 code .
@@ -112,12 +101,17 @@ code .
 
 ### Running Locally
 
+Since this is a static HTML/CSS project, you can run it in several ways:
+
 ```bash
 # Option 1: Open directly in browser
-# Double-click index.html or right-click → "Open with" → Browser
+# Double-click index.html
 
-# Option 2: Use a local server (recommended)
-# Using Python
+# Option 2: Use VS Code Live Server extension
+# Right-click index.html → "Open with Live Server"
+
+# Option 3: Use a simple HTTP server
+# Using Python 3
 python -m http.server 8000
 
 # Using Node.js
@@ -125,129 +119,69 @@ npx serve .
 
 # Using PHP
 php -S localhost:8000
-
-# Using VS Code Live Server extension
-# Right-click index.html → "Open with Live Server"
 ```
 
-Your app should now be running at: `http://localhost:8000`
+Visit `http://localhost:8000` to view the project.
 
-## � Testing
+## 🎨 Design
 
-### Manual Testing Checklist
+This project follows the design specifications provided by Frontend Mentor:
 
-- **Responsive Design**: Test on different screen sizes (mobile, tablet, desktop)
-- **Cross-browser**: Verify functionality in Chrome, Firefox, Safari, Edge
-- **Navigation**: Check all menu links and smooth scrolling
-- **Interactive Elements**: Test buttons, hover effects, and animations
-- **Form Validation**: Ensure all forms work correctly
-- **Performance**: Check loading times and optimization
+- **Layout**: Desktop-first responsive design
+- **Colors**: 
+  - Strong Cyan: `hsl(171, 66%, 44%)`
+  - Light Blue: `hsl(233, 100%, 69%)`
+  - Dark Grayish Blue: `hsl(210, 10%, 33%)`
+  - Grayish Blue: `hsl(201, 11%, 66%)`
+- **Typography**: 
+  - Font: Bai Jamjuree
+  - Font weights: 400, 600
+- **Mobile Breakpoint**: 375px
+- **Desktop Breakpoint**: 1440px
 
-```bash
-# Run accessibility tests
-npx lighthouse-ci autorun
+## 📚 What I Learned
 
-# Check HTML validation
-npx html-validate index.html
+Through this project, I practiced and improved:
 
-# CSS validation
-npx stylelint "**/*.css"
-```
+- **CSS Grid and Flexbox** for modern layouts
+- **Responsive design principles** and mobile-first approach
+- **CSS custom properties** for maintainable code
+- **Semantic HTML** for better accessibility
+- **CSS animations and transitions** for enhanced UX
 
-## ☁️ Deployment
+## 🔄 Continued Development
 
-### GitHub Pages
+Areas for future enhancement:
 
-This project is configured for GitHub Pages deployment:
+- Add JavaScript interactivity
+- Implement form validation
+- Add smooth scroll navigation
+- Enhance accessibility features
+- Add dark mode toggle
+- Optimize performance further
 
-```bash
-# Build for production (if using build tools)
-npm run build
+## 🤝 Contributing
 
-# Deploy to GitHub Pages
-git add .
-git commit -m "Deploy to GitHub Pages"
-git push origin main
-```
+This is a practice project, but suggestions and improvements are welcome!
 
-### Alternative Deployment Options
-
-**Netlify:**
-1. Connect your GitHub repository
-2. Set build command: `npm run build` (if applicable)
-3. Set publish directory: `./` or `dist/`
-
-**Vercel:**
-```bash
-npm i -g vercel
-vercel --prod
-```
-
-**Manual Deployment:**
-Upload files to any web hosting service (shared hosting, VPS, etc.)
-
-## �🤝 Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-### Development Workflow
-
-1. **Fork the repository**
-2. **Create a new branch**
-   ```bash
-   git checkout -b feature/my-feature
-   ```
-3. **Make your changes**
-4. **Test thoroughly**
-5. **Commit your changes**
-   ```bash
-   git commit -m "Add: new feature description"
-   ```
-6. **Push to your branch**
-   ```bash
-   git push origin feature/my-feature
-   ```
-7. **Open a Pull Request**
-
-### Code Standards
-
-- Use semantic HTML5 elements
-- Follow BEM methodology for CSS naming
-- Write clean, commented JavaScript
-- Ensure responsive design works on all devices
-- Test cross-browser compatibility
-- Maintain accessibility standards (WCAG 2.1)
-
-### Pull Request Guidelines
-
-- Provide a clear description of changes
-- Include screenshots for UI changes
-- Test on multiple devices and browsers
-- Update documentation if needed
-- Keep commits focused and atomic
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -am 'Add improvement'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Open a Pull Request
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` file for more information.
+This project is open source and available under the [MIT License](LICENSE).
 
----
+## 🎖️ Acknowledgments
 
-## 👨‍💻 Author & Contact
-
-**Hoang Huu Thanh**
-- 🐙 GitHub: [@hoanghuuthanhdev](https://github.com/hoanghuuthanhdev)
-- 📧 Email: hoanghuuthanhdev@gmail.com
-- 💼 LinkedIn: [Hoang Huu Thanh](https://www.linkedin.com/in/hoanghuuthanhdev)
-
-## 🙏 Acknowledgments
-
-- Design inspiration from [Frontend Mentor](https://www.frontendmentor.io/)
-- Icons and assets from the original design files
-- Typography: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree) from Google Fonts
+- Design challenge provided by [Frontend Mentor](https://www.frontendmentor.io/)
+- Icons and images from the Frontend Mentor design assets
+- Google Fonts for the Bai Jamjuree typeface
 
 ---
 
 <div align="center">
-  <p>⭐ If you found this project helpful, please give it a star!</p>
-  <p>🚀 Made with passion for learning and development</p>
+  <p>Made with ❤️ as part of Frontend Mentor challenges</p>
 </div>

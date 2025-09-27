@@ -212,7 +212,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.9);
   z-index: 1;
 }
 
@@ -287,7 +286,7 @@
     var(--color-primary-500),
     var(--color-primary-600)
   );
-  color: white;
+  color: var(--color-bg-primary);
   border-color: var(--color-primary-500);
   box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
 }
@@ -344,6 +343,11 @@
   max-width: 600px;
   animation: fadeInUp 0.8s ease-out 0.6s both;
   margin-bottom: var(--space-16);
+}
+.feature_subtitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
 }
 
 .feature_main {
@@ -462,6 +466,9 @@
 }
 .workflow_subtitle {
   margin: var(--space-8) 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
 }
 .workflow_content {
   font-size: var(--font-size-base);
@@ -585,6 +592,12 @@
   margin-bottom: var(--space-2);
   transition: color var(--transition-normal);
 }
+.sponsor_position {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-top: var(--space-4);
+}
 
 .sponsor_person:hover .sponsor_name {
   color: var(--color-primary-500);
@@ -602,7 +615,6 @@
 .sponsor_logo_wrapper {
   overflow: hidden;
   width: 100%;
-  background: #fff;
   padding: var(--space-6) 0;
 }
 
@@ -622,6 +634,8 @@
   object-fit: contain;
 }
 
+/* FAQ */
+
 .section-faq {
   display: flex;
   flex-direction: column;
@@ -636,6 +650,18 @@
   font-weight: var(--font-weight-bold);
   padding: var(--space-4) 0;
 }
+.faq_question {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.faq_item span {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
 .faq_list {
   display: flex;
   justify-content: center;
@@ -677,4 +703,118 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   background: var(--color-bg-secondary);
   transform: translateY(-8px) scale(1.1);
+}
+/* Footer */
+.wrapfooter {
+  color: var(--color-text-primary);
+  width: 100%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-4);
+  margin: 0 auto;
+  max-width: 1200px;
+  margin: var(--space-16);
+}
+
+.footer_brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footer_brand img {
+  width: 50px;
+}
+
+.brand_title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.brand_description {
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+  max-width: 300px;
+}
+
+.footer_social {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--space-6);
+}
+
+.footer_social img {
+  width: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: brightness(0.8);
+}
+
+.footer_social img:hover {
+  filter: brightness(1.2) sepia(1) saturate(2) hue-rotate(200deg);
+  transform: translateY(-2px);
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link_title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0 0 var(--space-6) 0;
+}
+
+.link_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.link_item {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.link_item:hover {
+  color: #63b3ed;
+  transform: translateX(5px);
+}
+
+.link_item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #63b3ed;
+  transition: width 0.3s ease;
+}
+
+.link_item:hover::before {
+  width: 6px;
+}
+
+.author {
+  text-align: center;
+  padding: var(--space-4) 0;
+}
+
+.author p {
+  margin: 0;
+  color: var(--font-size-lg);
+  font-size: var(--font-size-lg);
 }
